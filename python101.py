@@ -8,6 +8,17 @@ def print_other():
     print('something else')
 
 if __name__=="__main__":
-    x = 2
-    y = 3
+    parser = argparse.ArgumentParser(description='test program to learn about argparse ')
+    parser.add_argument(
+        'x',
+        help='value of x')
+    parser.add_argument(
+        '--yval',
+        type=int,
+        default=3,
+        help='value of y')
+    args = parser.parse_args()
+
+    x = args.x
+    y = args.yval
     print(f'calculate {x} x {y} = {x*y}')
