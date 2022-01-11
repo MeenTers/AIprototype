@@ -16,4 +16,5 @@ if __name__ == "__main__":
         pro = subprocess.Popen(["python","python101.py","9","--x",f"{i}"],stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         out, err = pro.communicate()
         text = str(out,'utf-8')
-        print(text[24:25])
+        print(len(text))
+        print(text[24:27])
