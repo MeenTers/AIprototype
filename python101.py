@@ -7,7 +7,6 @@ import subprocess #สำหรับรัน terminal command
 def print_other():
     print('something else')
 
-def parser_input():
     parser = argparse.ArgumentParser(description='test program to learn about argparse and subprocess ')
     parser.add_argument(
         'm',
@@ -23,11 +22,7 @@ def parser_input():
         default=3,
         help='value of y')
     args = parser.parse_args()
-    return args
 
-    if __name__ == '__main__':
-
-        args = parse_input()
 
     x = args.x
     y = args.yval
