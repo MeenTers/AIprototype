@@ -23,6 +23,11 @@ if __name__=="__main__":
         default=3,
         help='value of y')
     args = parser.parse_args()
+    return args
+
+    if __name__ == '__main__':
+
+        args = parse_input()
 
     x = args.x
     y = args.yval
