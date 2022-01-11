@@ -7,24 +7,27 @@ import subprocess #สำหรับรัน terminal command
 def print_other():
     print('something else')
 
-    parser = argparse.ArgumentParser(description='test program to learn about argparse and subprocess ')
+if __name__=="__main__":
+    parser = argparse.ArgumentParser(description='test program to learn about argparse ')
     parser.add_argument(
         'm',
         type=int,
-        help='value of M positional argument')
+        help='value of positional argument')
+    
     parser.add_argument(
         '--x',
         type=int,
         help='value of x')
+    
     parser.add_argument(
         '--yval',
         type=int,
         default=3,
         help='value of y')
+    
     args = parser.parse_args()
-
 
     x = args.x
     y = args.yval
-    print(f'M={args.m}')
+    print(f'M = {args.m}')
     print(f'calculate {x} x {y} = {x*y}')
