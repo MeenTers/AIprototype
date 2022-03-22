@@ -1,8 +1,9 @@
 #import pandas
 from inspect import getargvalues
 from operator import index
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, make_response
 import json
+import pandas as pd
 app = Flask(__name__)
 
 @app.route("/") 
@@ -30,12 +31,17 @@ def request_detail():
 def homes():
 
     if request.method == "POST":
-        pddb = read_csv("testdb.csv")
+        pddb = pd.read_csv("testdb.csv")
         first_name = request.form.get("fname")
         last_name = request.form.get("lname")
         pddb = pddb.append({'name':first_name,'lastname':last_name},ignore_index=True)
-        pddb.to_csv(db.csv,index=False)
-        return render_template("home.html",name= f"{first_name} {last_name}")
+        pddb.to_csv('testdb.csv',index=False)
+        resp = make_response(render_template("home.html",name= f"{first_name} {last_name}"))
+        resp.set_cookie('first_name',first_name)
+
+        return resp
+
+        #return render_template("home.html",name= f"{first_name} {last_name}")
     if request.method == "GET":
         getval = request.args
         print(getval)
