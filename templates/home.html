@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Tutorial</title>
+  </head>
+  <body>
+    <h1> My First Try Using Flask </h1>
+    <p> Flask is Fun </p>
+    <h2 style="color: red;"> Hello, {{name}}! </h2>
+    <h1 style="color: aqua;"> cookies {{request.cookies.get('first_name')}}</h1>
+    <h2 style="color: rgb(15, 124, 38);"> Agent is {{item}}!</h2>
+    <h2> {{2**5}} </h2>
+
+    <form action="{{ url_for('homes')}}" method="post">
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="fname" placeholder="firstname">
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lname" placeholder="lastname">
+      <button type="submit">Login</button><br>
+    </form>
+    <form action="{{ url_for('home1')}}" method="post">
+      <label for="agent_name">Choose your Agent:</label><br>
+      <input type="radio" id="jett" name="fav_agent" value="Jett">
+      <label for="jett">Jett</label><br>
+      <input type="radio" id="viper" name="fav_agent" value="Viper">
+      <label for="viper">Viper</label><br>
+      <input type="radio" id="astra" name="fav_agent" value="Astra">
+      <label for="astra">Astra</label><br>
+      <button type="submit"> Submit </button>
+    </form>
+  </body>
+</html>
