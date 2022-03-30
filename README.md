@@ -1,6 +1,13 @@
 # AIprototype 2022
 > นายธนพล ทาโยธี 613020241-3 สาขาสารสนเทศสถิติ ชั้นปีที่ 4 
 -------------------------------
+## anaconda environment
+
+    conda install                   ติดตั้งpackage ที่ต้องการ
+    conda create -n  python         สร้าง environment
+    conda activate                  เรียกใช้ environment
+    conda deactivate                เลิกใช้งาน environment
+    conda info --envs               มีvirtual environment อะไรบ้าง
 ## Command line
 
     ls          ตรวจเช็คไฟล์ในrootต่างๆ
@@ -20,8 +27,8 @@
     conda install git
 ## setup git ครั้งแรก
 
-    $ git config --global user.name "MeenTers"  ชื่อusernam git
-    $ git config --global user.email meenthanapon@kkumail.com email git
+    $ git config --global user.name "MeenTers"  ชื่อusername git
+    $ git config --global user.email meenthanapon@kkumail.com email:git
 ## การใช้งาน package git
     
     git status    ตรวจสอบว่ามีไฟล์ใดบ้างมีการเปลี่ยนแปลง
