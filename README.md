@@ -37,7 +37,7 @@
     git add       เพิ่มไฟล์ที่ต้องการขึ้นสู่ github
     git commit -m เพื่อคอมเมนท์ข้อความ
     git push      ส่งไฟล์จากเครื่องสู่ github
-    
+## เนื้อหาในคอร์สเรียน 
 * ### Subprocess : [[code]](https://github.com/MeenTers/AIprototype/blob/main/testsub.py)
 * ### Python Argparse : [[code]](https://github.com/MeenTers/AIprototype/blob/main/python101.py)
 ---------------------------------------------------------------------------------------------------------
