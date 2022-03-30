@@ -21,7 +21,8 @@
          Subclassing - สร้างได้ยาก โดยในส่วนนี้ไม่ได้เรียนในคอร์ส
  Data Pipeline
         
-         Download and prepare the CIFAR10 dataset (https://www.kaggle.com/datasets/wordroid/cifar10-object-recognition-in-images-zip-file)
+         Download and prepare the CIFAR10 dataset: 
+         https://www.kaggle.com/datasets/wordroid/cifar10-object-recognition-in-images-zip-file
  Implement TF flow from directory on google drive
         
         * การโหลดข้อมูล Link: https://www.tensorflow.org/guide/data
