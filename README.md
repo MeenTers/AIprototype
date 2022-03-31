@@ -41,7 +41,7 @@
 * ### Subprocess : [[code]](https://github.com/MeenTers/AIprototype/blob/main/testsub.py)
 * ### Python Argparse : [[code]](https://github.com/MeenTers/AIprototype/blob/main/python101.py)
 ---------------------------------------------------------------------------------------------------------
- ## Flask เป็น Package ที่ใช้สำหรับพัฒนาเว็บแอปพลิเคชัน
+ ## Flask เป็น Package ที่ใช้สำหรับพัฒนาเว็บแอปพลิเคชันและเรียนCookie
   * ###  flask file : [[code]](https://github.com/MeenTers/AIprototype/blob/main/testflask.py)
   * ### Home.html file : [[code]](https://github.com/MeenTers/AIprototype/blob/main/templates/home.html)
   * ### csv file : [[code]](https://github.com/MeenTers/AIprototype/blob/main/testdb.csv)
